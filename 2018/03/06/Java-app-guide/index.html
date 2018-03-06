@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Java,开发规范," />
 
 
 
@@ -94,13 +94,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="菜鸟程序猿">
-<meta property="og:url" content="https://mayu117.github.io/index.html">
+<meta name="description" content="Guide 为什么要有团队规范？本规范的形成旨在为项目开发建立一个可操作的编程标准、约定和指南，以规范我们的代码开发工作, 减少在浏览不同作者的代码时，因代码风格的不同而造成不便。提高代码的可读性，提高系统的健壮性、稳定性、可靠性。通过遵循这些规范，作为一个开发者的生产效率会有显著提高。经验证明，若从一开始就花时间编写高质量的代码，则在开发阶段，对代码的修改要容易很多。并且遵循一套通用的程序设计标">
+<meta name="keywords" content="Java,开发规范">
+<meta property="og:type" content="article">
+<meta property="og:title" content="业务系统开发规范">
+<meta property="og:url" content="https://mayu117.github.io/2018/03/06/Java-app-guide/index.html">
 <meta property="og:site_name" content="菜鸟程序猿">
+<meta property="og:description" content="Guide 为什么要有团队规范？本规范的形成旨在为项目开发建立一个可操作的编程标准、约定和指南，以规范我们的代码开发工作, 减少在浏览不同作者的代码时，因代码风格的不同而造成不便。提高代码的可读性，提高系统的健壮性、稳定性、可靠性。通过遵循这些规范，作为一个开发者的生产效率会有显著提高。经验证明，若从一开始就花时间编写高质量的代码，则在开发阶段，对代码的修改要容易很多。并且遵循一套通用的程序设计标">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-06T06:00:08.851Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="菜鸟程序猿">
+<meta name="twitter:title" content="业务系统开发规范">
+<meta name="twitter:description" content="Guide 为什么要有团队规范？本规范的形成旨在为项目开发建立一个可操作的编程标准、约定和指南，以规范我们的代码开发工作, 减少在浏览不同作者的代码时，因代码风格的不同而造成不便。提高代码的可读性，提高系统的健壮性、稳定性、可靠性。通过遵循这些规范，作为一个开发者的生产效率会有显著提高。经验证明，若从一开始就花时间编写高质量的代码，则在开发阶段，对代码的修改要容易很多。并且遵循一套通用的程序设计标">
 
 
 
@@ -129,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="https://mayu117.github.io/"/>
+  <link rel="canonical" href="https://mayu117.github.io/2018/03/06/Java-app-guide/"/>
 
 
 
 
 
-  <title>菜鸟程序猿</title>
+  <title>业务系统开发规范 | 菜鸟程序猿</title>
   
 
 
@@ -160,9 +165,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -265,9 +268,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -297,9 +300,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/06/Java-app-guide/" itemprop="url">业务系统开发规范</a></h1>
+          <h1 class="post-title" itemprop="name headline">业务系统开发规范</h1>
         
 
         <div class="post-meta">
@@ -371,9 +372,7 @@
       
 
       
-        
-          
-            <h1 id="Guide"><a href="#Guide" class="headerlink" title="Guide"></a>Guide</h1><hr>
+        <h1 id="Guide"><a href="#Guide" class="headerlink" title="Guide"></a>Guide</h1><hr>
 <h2 id="为什么要有团队规范？"><a href="#为什么要有团队规范？" class="headerlink" title="为什么要有团队规范？"></a>为什么要有团队规范？</h2><p>本规范的形成旨在为项目开发建立一个可操作的编程标准、约定和指南，以规范我们的代码开发工作, 减少在浏览不同作者的代码时，因代码风格的不同而造成不便。提高代码的可读性，提高系统的健壮性、稳定性、可靠性。通过遵循这些规范，作为一个开发者的生产效率会有显著提高。经验证明，若从一开始就花时间编写高质量的代码，则在开发阶段，对代码的修改要容易很多。并且遵循一套通用的程序设计标准将带来更大的一致性，使开发团队的效率明显提高。虽然这些细节不会有性能上的优化，但是却体现了一个coder和团队的专业程度。</p>
 <hr>
 <h2 id="规范列表："><a href="#规范列表：" class="headerlink" title="规范列表："></a>规范列表：</h2><ul>
@@ -662,8 +661,6 @@
 
 - **禁止**查询语句用 `*` 通配符。
 </code></pre>
-          
-        
       
     </div>
     
@@ -678,163 +675,38 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://mayu117.github.io/2018/03/05/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="马玉亮">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="菜鸟程序猿">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/05/hello-world/" itemprop="url">基于Hexo和Github搭建博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-05T00:00:00+08:00">
-                2018-03-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/搭建博客/" itemprop="url" rel="index">
-                    <span itemprop="name">搭建博客</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/Java/" rel="tag"># Java</a>
           
-
+            <a href="/tags/开发规范/" rel="tag"># 开发规范</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/05/hello-world/" rel="next" title="基于Hexo和Github搭建博客">
+                <i class="fa fa-chevron-left"></i> 基于Hexo和Github搭建博客
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -844,10 +716,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -855,6 +728,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -875,8 +752,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -938,6 +824,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Guide"><span class="nav-number">1.</span> <span class="nav-text">Guide</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要有团队规范？"><span class="nav-number">1.1.</span> <span class="nav-text">为什么要有团队规范？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#规范列表："><span class="nav-number">1.2.</span> <span class="nav-text">规范列表：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Java规范"><span class="nav-number">2.</span> <span class="nav-text">Java规范</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#变量定义"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">变量定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常量定义"><span class="nav-number">2.0.0.2.</span> <span class="nav-text">常量定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#格式规约"><span class="nav-number">2.0.0.3.</span> <span class="nav-text">格式规约</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一-变量定义"><span class="nav-number">3.</span> <span class="nav-text">一.变量定义</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-【强制】-代码中的命名严禁使用拼音与英文混合的方式，更不允许直接使用中文的方式。"><span class="nav-number">3.0.0.1.</span> <span class="nav-text">1.【强制】 代码中的命名严禁使用拼音与英文混合的方式，更不允许直接使用中文的方式。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-类名使用-UpperCamelCase-风格（首字母大写），必须遵从驼峰形式。"><span class="nav-number">3.0.0.2.</span> <span class="nav-text">2. 类名使用 UpperCamelCase 风格（首字母大写），必须遵从驼峰形式。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-方法名、参数名、成员变量、局部变量都统一使用-lowerCamelCase-风格（首字母小写），必须遵从驼峰形式。"><span class="nav-number">3.0.0.3.</span> <span class="nav-text">3. 方法名、参数名、成员变量、局部变量都统一使用 lowerCamelCase 风格（首字母小写），必须遵从驼峰形式。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-【强制】常量命名全部大写，单词间用下划线隔开，力求语义表达完整清楚，不要嫌名字长。"><span class="nav-number">3.0.0.4.</span> <span class="nav-text">4. 【强制】常量命名全部大写，单词间用下划线隔开，力求语义表达完整清楚，不要嫌名字长。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-【强制】包名统一使用小写，点分隔符之间有且仅有一个自然语义的英语单词。包名统一使用单数形式，但是类名如果有复数含义，类名可以使用复数形式。"><span class="nav-number">3.0.0.5.</span> <span class="nav-text">5. 【强制】包名统一使用小写，点分隔符之间有且仅有一个自然语义的英语单词。包名统一使用单数形式，但是类名如果有复数含义，类名可以使用复数形式。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-杜绝完全不规范的缩写，避免望文不知义。"><span class="nav-number">3.0.0.6.</span> <span class="nav-text">6. 杜绝完全不规范的缩写，避免望文不知义。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-【推荐】如果使用到了设计模式，建议在类名中体现出具体模式。"><span class="nav-number">3.0.0.7.</span> <span class="nav-text">7. 【推荐】如果使用到了设计模式，建议在类名中体现出具体模式。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-枚举类名建议带上-Enum-后缀，枚举成员名称需要全大写，单词间用下划线隔开。"><span class="nav-number">3.0.0.8.</span> <span class="nav-text">8. 枚举类名建议带上 Enum 后缀，枚举成员名称需要全大写，单词间用下划线隔开。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-【强制】-代码中的命名均不能以下划线或美元符号开始，也不能以下划线或美元符号结束。"><span class="nav-number">3.0.0.9.</span> <span class="nav-text">9. 【强制】 代码中的命名均不能以下划线或美元符号开始，也不能以下划线或美元符号结束。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-【推荐】接口类中的方法和属性不要加任何修饰符号（public-也不要加），保持代码的简洁性，并加上有效的-Javadoc-注释"><span class="nav-number">3.0.0.10.</span> <span class="nav-text">10. 【推荐】接口类中的方法和属性不要加任何修饰符号（public 也不要加），保持代码的简洁性，并加上有效的 Javadoc 注释</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#11-源代码文件以文件内容中的最顶层的Java类命名，而且大小写敏感，文件扩展名为-java，同时，文件的编码格式统一为UTF-8。"><span class="nav-number">3.0.0.11.</span> <span class="nav-text">11. 源代码文件以文件内容中的最顶层的Java类命名，而且大小写敏感，文件扩展名为 .java，同时，文件的编码格式统一为UTF-8。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12-类的命名遵循大驼峰命名法UpperCamelCase，而方法名和变量名的命名遵循小驼峰命名法lowerCamelCase"><span class="nav-number">3.0.0.12.</span> <span class="nav-text">12. 类的命名遵循大驼峰命名法UpperCamelCase，而方法名和变量名的命名遵循小驼峰命名法lowerCamelCase</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二-常量定义"><span class="nav-number">4.</span> <span class="nav-text">二.常量定义</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-【强制】不允许出现任何魔法值（即未经定义的常量）直接出现在代码中。"><span class="nav-number">4.0.0.1.</span> <span class="nav-text">1. 【强制】不允许出现任何魔法值（即未经定义的常量）直接出现在代码中。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-【强制】long-或者-Long-初始赋值时，必须使用大写的-L，不能是小写的-l，小写容易跟数字1-混淆，造成误解。"><span class="nav-number">4.0.0.2.</span> <span class="nav-text">2. 【强制】long 或者 Long 初始赋值时，必须使用大写的 L，不能是小写的 l，小写容易跟数字1 混淆，造成误解。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-【强制】不要使用一个常量类维护所有常量，应该按常量功能进行归类，分开维护。"><span class="nav-number">4.0.0.3.</span> <span class="nav-text">3. 【强制】不要使用一个常量类维护所有常量，应该按常量功能进行归类，分开维护。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-【推荐】常量的复用层次有五层：跨应用共享常量、应用内共享常量、子工程内共享常量、包内共享常量、类内共享常量。"><span class="nav-number">4.0.0.4.</span> <span class="nav-text">4. 【推荐】常量的复用层次有五层：跨应用共享常量、应用内共享常量、子工程内共享常量、包内共享常量、类内共享常量。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-【推荐】如果变量值仅在一个范围内变化，且带有名称之外的延伸属性，定义为枚举类。下面"><span class="nav-number">4.0.0.5.</span> <span class="nav-text">5.【推荐】如果变量值仅在一个范围内变化，且带有名称之外的延伸属性，定义为枚举类。下面</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三-格式规约"><span class="nav-number">5.</span> <span class="nav-text">三. 格式规约</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-【建议】缩进采用-4-个空格，禁止使用-tab-字符。"><span class="nav-number">5.0.0.1.</span> <span class="nav-text">1. 【建议】缩进采用 4 个空格，禁止使用 tab 字符。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-【强制】单行字符数限制不超过-120-个，超出需要换行。"><span class="nav-number">5.0.0.2.</span> <span class="nav-text">2. 【强制】单行字符数限制不超过 120 个，超出需要换行。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Javadoc"><span class="nav-number">5.0.0.3.</span> <span class="nav-text">3. Javadoc</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四-OOP规约"><span class="nav-number">6.</span> <span class="nav-text">四. OOP规约</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-【强制】外部正在调用或者二方库依赖的接口，不允许修改方法签名，避免对接口调用方产生影响。接口过时必须加-Deprecated-注解，并清晰地说明采用的新接口或者新服务是什么。"><span class="nav-number">6.0.0.1.</span> <span class="nav-text">1. 【强制】外部正在调用或者二方库依赖的接口，不允许修改方法签名，避免对接口调用方产生影响。接口过时必须加@Deprecated 注解，并清晰地说明采用的新接口或者新服务是什么。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-【强制】定义-DO-DTO-VO-等-POJO-类时，不要设定任何属性默认值。"><span class="nav-number">6.0.0.2.</span> <span class="nav-text">2. 【强制】定义 DO/DTO/VO 等 POJO 类时，不要设定任何属性默认值。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-【强制】构造方法里面禁止加入任何业务逻辑，如果有初始化逻辑，请放在-init-方法中。"><span class="nav-number">6.0.0.3.</span> <span class="nav-text">3.  【强制】构造方法里面禁止加入任何业务逻辑，如果有初始化逻辑，请放在 init 方法中。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-【强制】POJO-类必须写-toString-方法。使用-IDE-的中工具：source-gt-generate-toString时，如果继承了另一个-POJO-类，注意在前面加一下-super-toString。"><span class="nav-number">6.0.0.4.</span> <span class="nav-text">4. 【强制】POJO 类必须写 toString 方法。使用 IDE 的中工具：source&gt; generate toString时，如果继承了另一个 POJO 类，注意在前面加一下 super.toString。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-【推荐】当一个类有多个构造方法，或者多个同名方法，这些方法应该按顺序放置在一起，便于阅读。"><span class="nav-number">6.0.0.5.</span> <span class="nav-text">5. 【推荐】当一个类有多个构造方法，或者多个同名方法，这些方法应该按顺序放置在一起，便于阅读。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-【推荐】-类内方法定义顺序依次是：公有方法或保护方法-gt-私有方法-gt-getter-setter方法。"><span class="nav-number">6.0.0.6.</span> <span class="nav-text">6.【推荐】 类内方法定义顺序依次是：公有方法或保护方法 &gt; 私有方法 &gt; getter/setter方法。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-【推荐】setter-方法中，参数名称与类成员变量名称一致，this-成员名-参数名。在getter-setter-方法中，不要增加业务逻辑，增加排查问题的难度。我曾天真的认为这种黑魔法很酷。"><span class="nav-number">6.0.0.7.</span> <span class="nav-text">7.  【推荐】setter 方法中，参数名称与类成员变量名称一致，this.成员名 = 参数名。在getter/setter 方法中，不要增加业务逻辑，增加排查问题的难度。我曾天真的认为这种黑魔法很酷。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-【推荐】下列情况，声明成-final-会更有提示性："><span class="nav-number">6.0.0.8.</span> <span class="nav-text">8. 【推荐】下列情况，声明成 final 会更有提示性：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-【推荐】类成员与方法访问控制从严："><span class="nav-number">6.0.0.9.</span> <span class="nav-text">9. 【推荐】类成员与方法访问控制从严：</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四-集合操作"><span class="nav-number">7.</span> <span class="nav-text">四. 集合操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-【强制】不要在-foreach-循环里进行元素的-remove-add-操作。remove-元素请使用-Iterator方式，如果并发操作，需要对-Iterator-对象加锁。"><span class="nav-number">7.0.0.1.</span> <span class="nav-text">1. 【强制】不要在 foreach 循环里进行元素的 remove/add 操作。remove 元素请使用 Iterator方式，如果并发操作，需要对 Iterator 对象加锁。</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五-异常处理"><span class="nav-number">8.</span> <span class="nav-text">五.异常处理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-【推荐】方法的返回值可以为-null，不强制返回空集合，或者空对象等，必须添加注释充分说明什么情况下会返回-null-值。调用方需要进行-null-判断防止-NPE-问题。"><span class="nav-number">8.0.0.1.</span> <span class="nav-text">1.【推荐】方法的返回值可以为 null，不强制返回空集合，或者空对象等，必须添加注释充分说明什么情况下会返回 null 值。调用方需要进行 null 判断防止 NPE 问题。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-【强制】对大段代码进行-try-catch，这是不负责任的表现。catch-时请分清稳定代码和非稳定代码，稳定代码指的是无论如何不会出错的代码。对于非稳定代码的-catch-尽可能进行区分异常类型，再做对应的异常处理。"><span class="nav-number">8.0.0.2.</span> <span class="nav-text">2. 【强制】对大段代码进行 try-catch，这是不负责任的表现。catch 时请分清稳定代码和非稳定代码，稳定代码指的是无论如何不会出错的代码。对于非稳定代码的 catch 尽可能进行区分异常类型，再做对应的异常处理。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-【强制】捕获异常是为了处理它，不要捕获了却什么都不处理而抛弃之，如果不想处理它，请将该异常抛给它的调用者。最外层的业务使用者，必须处理异常，将其转化为用户可以理解的内容。"><span class="nav-number">8.0.0.3.</span> <span class="nav-text">3. 【强制】捕获异常是为了处理它，不要捕获了却什么都不处理而抛弃之，如果不想处理它，请将该异常抛给它的调用者。最外层的业务使用者，必须处理异常，将其转化为用户可以理解的内容。</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#六-日志"><span class="nav-number">9.</span> <span class="nav-text">六. 日志</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-【强制】直接return的情况下一定要打日志-不然根本无法判断代码没有执行还是在哪个位置被return了。"><span class="nav-number">9.0.0.1.</span> <span class="nav-text">1. 【强制】直接return的情况下一定要打日志,不然根本无法判断代码没有执行还是在哪个位置被return了。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-【强制】异常信息应该包括两类信息：案发现场信息和异常堆栈信息。如果不处理，那么通过关键字-throws-往上抛出。"><span class="nav-number">9.0.0.2.</span> <span class="nav-text">2. 【强制】异常信息应该包括两类信息：案发现场信息和异常堆栈信息。如果不处理，那么通过关键字 throws 往上抛出。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-【参考】可以使用-warn-日志级别来记录用户输入参数错误的情况，避免用户投诉时，无所适从。注意日志输出的级别，error-级别只记录系统逻辑出错、异常等重要的错误信息。如非必要，请不要在此场景打出-error-级别。"><span class="nav-number">9.0.0.3.</span> <span class="nav-text">3. 【参考】可以使用 warn 日志级别来记录用户输入参数错误的情况，避免用户投诉时，无所适从。注意日志输出的级别，error 级别只记录系统逻辑出错、异常等重要的错误信息。如非必要，请不要在此场景打出 error 级别。</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Javascript规范"><span class="nav-number">10.</span> <span class="nav-text">Javascript规范</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#目录"><span class="nav-number">10.1.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命名"><span class="nav-number">10.2.</span> <span class="nav-text">命名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化"><span class="nav-number">10.3.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数"><span class="nav-number">10.4.</span> <span class="nav-text">函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#循环"><span class="nav-number">10.5.</span> <span class="nav-text">循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#属性访问"><span class="nav-number">10.6.</span> <span class="nav-text">属性访问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注释"><span class="nav-number">10.7.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码风格"><span class="nav-number">10.8.</span> <span class="nav-text">代码风格</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1058,10 +960,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 

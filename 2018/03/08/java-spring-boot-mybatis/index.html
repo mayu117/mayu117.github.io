@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="菜鸟程序猿">
 <meta property="og:description" content="一个基于Spring Boot &amp;amp; MyBatis的种子项目，用于快速构建中小型API、RESTful API项目简介该种子项目已经有过多个真实项目的实践，稳定、简单、快速，使我们摆脱那些重复劳动，专注于业务代码的编写，减少加班。下面是一个简单的使用演示，看如何基于本项目在短短几十秒钟内实现一套简单的API，并运行提供服务。 特征&amp;amp;提供 最佳实践的项目结构、配置文件、精简的POM（">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-08T02:35:39.554Z">
+<meta property="og:updated_time" content="2018-03-13T07:02:11.061Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Spring Boot &amp; MyBatis的种子项目">
 <meta name="twitter:description" content="一个基于Spring Boot &amp;amp; MyBatis的种子项目，用于快速构建中小型API、RESTful API项目简介该种子项目已经有过多个真实项目的实践，稳定、简单、快速，使我们摆脱那些重复劳动，专注于业务代码的编写，减少加班。下面是一个简单的使用演示，看如何基于本项目在短短几十秒钟内实现一套简单的API，并运行提供服务。 特征&amp;amp;提供 最佳实践的项目结构、配置文件、精简的POM（">
@@ -384,6 +384,20 @@
 <li>集成MyBatis、通用Mapper插件、PageHelper分页插件，实现单表业务零SQL</li>
 <li>提供代码生成器根据表名生成对应的Model、Mapper、MapperXML、Service、ServiceImpl、Controller等基础代码，其中Controller模板默认提供POST和RESTful两套，根据需求在CodeGenerator.genController(tableName)方法中自己选择，默认使用POST模板。代码模板可根据实际项目的需求来扩展，由于每个公司业务都不太一样，所以只提供了一些比较基础、通用的模板，主要是提供一个思路来减少重复代码的编写，我在实际项目的使用中，其实根据公司业务的抽象编写了大量的模板。另外，使用模板也有助于保持团队代码风格的统一</li>
 </ul>
+<h2 id="开发建议"><a href="#开发建议" class="headerlink" title="开发建议"></a>开发建议</h2><ul>
+<li>需要工具类的话建议先从apache-commons-*和guava中找，实在没有再造轮子或引入类库，尽量精简项目</li>
+<li>开发规范建议遵循阿里巴巴Java开发手册（最新版下载)</li>
+<li>建议在公司内部使用ShowDoc、SpringFox-Swagger2 、RAP等开源项目来编写、管理API文档  </li>
+</ul>
+<h2 id="技术选型-amp-文档"><a href="#技术选型-amp-文档" class="headerlink" title="技术选型&amp;文档"></a>技术选型&amp;文档</h2><ul>
+<li>Spring Boot（查看Spring Boot学习&amp;使用指南）</li>
+<li>MyBatis（查看官方中文文档）</li>
+<li>MyBatisb通用Mapper插件（查看官方中文文档）</li>
+<li>MyBatis PageHelper分页插件（查看官方中文文档）</li>
+<li>Druid Spring Boot Starter（查看官方中文文档）</li>
+<li>Fastjson（查看官方中文文档）</li>
+<li>其他略</li>
+</ul>
 
       
     </div>
@@ -564,7 +578,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一个基于Spring-Boot-amp-MyBatis的种子项目，用于快速构建中小型API、RESTful-API项目"><span class="nav-number">1.</span> <span class="nav-text">一个基于Spring Boot &amp; MyBatis的种子项目，用于快速构建中小型API、RESTful API项目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特征-amp-提供"><span class="nav-number">1.2.</span> <span class="nav-text">特征&amp;提供</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一个基于Spring-Boot-amp-MyBatis的种子项目，用于快速构建中小型API、RESTful-API项目"><span class="nav-number">1.</span> <span class="nav-text">一个基于Spring Boot &amp; MyBatis的种子项目，用于快速构建中小型API、RESTful API项目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特征-amp-提供"><span class="nav-number">1.2.</span> <span class="nav-text">特征&amp;提供</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开发建议"><span class="nav-number">1.3.</span> <span class="nav-text">开发建议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#技术选型-amp-文档"><span class="nav-number">1.4.</span> <span class="nav-text">技术选型&amp;文档</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -607,7 +621,7 @@
 </span>
 </div>
   <div class="powered-by">
-  <span class="post-count">博客全站共8.8k字</span>
+  <span class="post-count">博客全站共9.0k字</span>
 </div>
 
         
